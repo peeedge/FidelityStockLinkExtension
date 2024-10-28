@@ -1,0 +1,19 @@
+{
+  "name": "FSL",
+  "version": "1.0",
+  "description": "",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://digital.fidelity.com/ftgw/digital/portfolio/positions"],
+      "all_frames": true,
+      "js": ["jquery-3.3.1.slim.min.js", "fsl.js"]
+    }
+  ],
+  "icons": {
+    "48": "images/fl.png"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
